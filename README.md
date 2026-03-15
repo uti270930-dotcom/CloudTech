@@ -1,0 +1,149 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cloud Tech Games</title>
+
+
+<style>
+
+
+body{
+background:black;
+color:white;
+font-family:Arial;
+margin:0;
+text-align:center;
+}
+
+
+header{
+padding:20px;
+font-size:32px;
+border-bottom:3px solid cyan;
+}
+
+
+.frame{
+border:3px solid cyan;
+margin:25px auto;
+padding:20px;
+max-width:1000px;
+}
+
+
+.games{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+
+.gameButton{
+border:2px solid cyan;
+background:black;
+color:white;
+padding:12px 20px;
+cursor:pointer;
+font-size:16px;
+}
+
+
+.gameButton:hover{
+background:cyan;
+color:black;
+}
+
+
+iframe{
+width:100%;
+height:85vh;
+border:none;
+margin-top:10px;
+}
+
+
+</style>
+
+
+<script>
+
+
+function loadGame(file){
+document.getElementById("player").src = file;
+}
+
+
+</script>
+
+
+</head>
+
+
+<body>
+
+
+<header>CLOUD TECH</header>
+
+
+<div class="frame">
+
+
+<h2>Instant Browser Games</h2>
+
+
+<div class="games">
+
+
+<button class="gameButton" onclick="loadGame('Slope.html')">
+Slope
+</button>
+
+
+<button class="gameButton" onclick="loadGame('Minecraft 1.12.2.html')">
+Minecraft
+</button>
+
+
+<button class="gameButton" onclick="loadGame('Soundboard.html')">
+Soundboard
+</button>
+
+
+<button class="gameButton" onclick="loadGame('game4.html')">
+Game 4
+</button>
+
+
+<button class="gameButton" onclick="loadGame('game5.html')">
+Game 5
+</button>
+
+
+<button class="gameButton" onclick="loadGame('https://pinaazul.wasmer.app/')">
+Ghost Game
+</button>
+
+
+</div>
+
+
+</div>
+
+
+<div class="frame">
+
+
+<h2>Game Player</h2>
+
+
+<iframe id="player"></iframe>
+
+
+</div>
+
+
+</body>
+</html>
+```
